@@ -10,16 +10,16 @@ def writeFile(inputList, fileName):
         for i in inputList:
             file.write(str(i)+'\n')
 
-writeFile([10,20,"apple"], "apple2.txt")
-test_data = [1, 2, 3]
-file_name = "test.txt"
-writeFile(test_data, file_name)
-with open(file_name, 'r') as file:
-    contents = file.read()
-    print("xxx")
-print(contents)
-print("zzz")
-assert contents == "1\n2\n3\n"
+#writeFile([10,20,"apple"], "apple2.txt")
+#test_data = [1, 2, 3]
+#file_name = "test.txt"
+#writeFile(test_data, file_name)
+#with open(file_name, 'r') as file:
+ #   contents = file.read()
+  #  print("xxx")
+#print(contents)
+#print("zzz")
+#assert contents == "1\n2\n3\n"
 
 def sortNames(fileName, targetFile):
     with open(fileName, 'r') as file:
@@ -33,7 +33,7 @@ def sortNames(fileName, targetFile):
     #I recommend using .sort() for this. You do not need to write the sorting algorithm yourself.
 
 
-sortNames("apple.txt","sampleA.txt")
+#sortNames("apple.txt","sampleA.txt")
 
 
 
@@ -44,5 +44,5 @@ def highScore( newScore: int):
         file.write(str(newScore)+'\n')
 
 
-highScore(random.randint(1,100))
+#highScore(random.randint(1,100))
 
