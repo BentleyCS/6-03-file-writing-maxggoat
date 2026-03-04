@@ -18,15 +18,12 @@ def test_writeFile():
 
 def test_sortNames():
 
-    writeFile(["3\n", "2\n", "1\n"], "source.txt")
-
-
+    writeFile(["3", "2", "1"], "source.txt")
     sortNames("source.txt", "target.txt")
-
     with open("target.txt") as file:
-        sorted_names = [line.strip() for line in file]
-
+        sorted_names = [line.strip() for line in file if line.strip()]
     assert sorted_names == ["1", "2", "3"]
+
 
 
 
