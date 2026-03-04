@@ -34,4 +34,11 @@ def test_sortNames():
 
 
 def test_high_score():
-    assert False
+        open("scores.txt", 'w').close()
+
+        highScore(10)
+        with open("scores.txt", 'r') as file:
+            lines = [line.strip() for line in file]
+        assert lines == ["10"]
+
+
